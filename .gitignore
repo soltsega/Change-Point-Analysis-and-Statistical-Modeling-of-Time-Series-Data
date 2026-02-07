@@ -72,5 +72,5 @@ venv_py311/Scripts/pip.exe
 venv_py311/Scripts/pip3.11.exe
 venv_py311/Scripts/pip3.exe
 venv_py311/Scripts/python.exe
-figures/image.png
+image.png
 interim_report.md
