@@ -91,3 +91,9 @@ venv_py311/Scripts/ipython3.exe
 venv_py311/Scripts/jupyter.exe
 venv_py311/Scripts/debugpy.exe
 venv_py311/share/jupyter/kernels/python3/kernel.json
+
+
+assumptions_limitations.md
+COMMUNICATION_CHANNELS_FEEDBACK.md
+TASK1_SUMMARY_REPORT.md
+communication_channels.md
