@@ -17,9 +17,12 @@ Bayesian change point analysis of Brent crude oil prices to identify structural 
 - `data/raw/brent_crude_prices_clean.csv` - Cleaned price data
 - `data/external/oil_price_events.csv` - Events dataset (100+ events)
 - `notebooks/01_eda.ipynb` - Complete EDA analysis
+- `notebooks/02_improved_eda.ipynb` - Enhanced EDA with explicit implementation
 - `assumptions_limitations.md` - Assumptions and limitations
+- `communication_channels.md` - Stakeholder communication strategy
 - `interim_report.md` - 1-2 page interim report
 - `src/change_point_basics.py` - Basic change point concepts
+- `src/improved_bayesian_change_point.py` - Enhanced Bayesian module with error handling
 - `google_colab_ready.ipynb` - Colab version with PyMC3
 
 ### 🎯 **Key Findings**
