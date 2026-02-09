@@ -74,3 +74,14 @@ venv_py311/Scripts/pip3.exe
 venv_py311/Scripts/python.exe
 figures/image.png
 interim_report.md
+documentations/assumptions_limitations.md
+.gitignore
+documentations/communication_channels.md
+figures/figure_1_timeseries.png
+figures/figure_2_logreturns.png
+figures/figure_4_statistical.png
+.gitignore
+documentations/COMMUNICATION_CHANNELS_FEEDBACK.md
+documentations/VISUALIZATION_INTEGRATION_GUIDE.md
+documentations/TASK1_SUMMARY_REPORT.md
+figures/figure_3_events.png
