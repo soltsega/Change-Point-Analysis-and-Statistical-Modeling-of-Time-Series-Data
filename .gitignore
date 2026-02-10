@@ -27,12 +27,25 @@ wheels/
 venv/
 env/
 ENV/
+venv_py311/
 
 # IDE
 .idea/
 .vscode/
 *.swp
 *.swo
+
+# Node.js
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.npm
+.eslintcache
+
+# React build
+build/
+dist/
 
 # Data files
 *.csv
@@ -54,51 +67,23 @@ ENV/
 .Trashes
 ehthumbs.db
 Thumbs.db
-reference_docs/React Admin Dashboard.pptx
-reference_docs/Data Science Workflow  (1).pptx
-reference_docs/Bayesian inference and Monte Carlo Markov Chain.pptx
-reference_docs/10 Academy - KAIM - Week 11.pdf
-reference_docs/Change Point Analysis.pdf
-read_pdf.py
-reference_docs/Bayesian inference and Monte Carlo Markov Chain.pdf
-reference_docs/React Admin Dashboard.pdf
-reference_docs/Data Science Workflow  (1).pdf
-venv_py311/Scripts/pythonw.exe
-venv_py311/Scripts/activate.bat
-TODO_TASK_1.md
-venv_py311/pyvenv.cfg
-venv_py311/Scripts/activate
-venv_py311/Scripts/pip.exe
-venv_py311/Scripts/pip3.11.exe
-venv_py311/Scripts/pip3.exe
-venv_py311/Scripts/python.exe
+
+# Reference docs (keep folder structure, ignore content)
+reference_docs/*.pptx
+reference_docs/*.pdf
+
+# Generated files
 image.png
 interim_report.md
-venv_py311/Scripts/debugpy-adapter.exe
-.gitignore
-venv_py311/share/man/man1/ipython.1
-venv_py311/share/jupyter/kernels/python3/logo-svg.svg
-venv_py311/share/jupyter/kernels/python3/logo-32x32.png
-venv_py311/share/jupyter/kernels/python3/logo-64x64.png
-venv_py311/Scripts/pygmentize.exe
-venv_py311/Scripts/jupyter-run.exe
-venv_py311/Scripts/jupyter-kernelspec.exe
-venv_py311/Scripts/jupyter-kernel.exe
-venv_py311/Scripts/jupyter-migrate.exe
-venv_py311/Scripts/jupyter-troubleshoot.exe
-venv_py311/Scripts/ipython.exe
-venv_py311/Scripts/ipython3.exe
-venv_py311/Scripts/jupyter.exe
-venv_py311/Scripts/debugpy.exe
-venv_py311/share/jupyter/kernels/python3/kernel.json
-
-
+read_pdf.py
+TODO_TASK_1.md
 assumptions_limitations.md
 COMMUNICATION_CHANNELS_FEEDBACK.md
 TASK1_SUMMARY_REPORT.md
 communication_channels.md
-documentations/VISUALIZATION_INTEGRATION_GUIDE.md
-figures/figure_2_logreturns.png
-figures/figure_4_statistical.png
-figures/figure_3_events.png
-figures/figure_1_timeseries.png
+figures/*.png
+
+# License files
+**/LICENSE
+**/LICENSE.md
+**/LICENSE.txt

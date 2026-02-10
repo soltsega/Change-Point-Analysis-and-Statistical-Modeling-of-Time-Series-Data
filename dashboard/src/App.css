@@ -1,0 +1,271 @@
+/* App.css - Styling for Change Point Analysis Dashboard */
+
+.app-layout {
+  min-height: 100vh;
+  background: #f0f2f5;
+}
+
+.app-header {
+  background: #001529;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.controls-card {
+  margin-bottom: 24px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.change-point-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  border: none;
+}
+
+.change-point-card .ant-card-head-title {
+  color: white;
+}
+
+.change-point-card .ant-statistic-title {
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.change-point-card .ant-statistic-content {
+  color: white;
+}
+
+.events-list {
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.event-item {
+  padding: 12px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.event-item:last-child {
+  border-bottom: none;
+}
+
+.impact-badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.impact-high {
+  background: #ff4d4f;
+  color: white;
+}
+
+.impact-extreme {
+  background: #722ed1;
+  color: white;
+}
+
+.impact-medium {
+  background: #fa8c16;
+  color: white;
+}
+
+.impact-low {
+  background: #52c41a;
+  color: white;
+}
+
+.impact-unknown {
+  background: #d9d9d9;
+  color: #595959;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-header {
+    padding: 0 16px;
+    flex-direction: column;
+    height: auto;
+    padding: 16px;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+    text-align: center;
+  }
+  
+  .controls-card .ant-row {
+    justify-content: center;
+  }
+  
+  .events-list {
+    max-height: 300px;
+  }
+}
+
+/* Chart styling */
+.recharts-wrapper {
+  background: white;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Custom scrollbar */
+.events-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.events-list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 3px;
+}
+
+.events-list::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 3px;
+}
+
+.events-list::-webkit-scrollbar-thumb:hover {
+  background: #a8a8a8;
+}
+
+/* Loading and error states */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+}
+
+.error-container {
+  padding: 24px;
+  text-align: center;
+}
+
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-item {
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Card hover effects */
+.ant-card {
+  transition: all 0.3s ease;
+}
+
+.ant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Button styling */
+.ant-btn-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border: none;
+}
+
+.ant-btn-primary:hover {
+  background: linear-gradient(135deg, #5a6fd8 0%, #6a4190 100%);
+  transform: translateY(-1px);
+}
+
+/* Statistic styling */
+.ant-statistic {
+  text-align: center;
+}
+
+.ant-statistic-content {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+/* Date picker styling */
+.ant-picker {
+  border-radius: 6px;
+}
+
+/* Tooltip styling */
+.recharts-tooltip-wrapper {
+  background: rgba(0, 0, 0, 0.8);
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+}
+
+.recharts-tooltip-wrapper .recharts-tooltip-label {
+  color: white;
+  font-weight: 500;
+}
+
+.recharts-tooltip-wrapper .recharts-tooltip-item {
+  color: white;
+}
+
+/* Legend styling */
+.recharts-legend-wrapper {
+  padding: 8px 0;
+}
+
+.recharts-legend-item {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Grid styling */
+.recharts-cartesian-grid {
+  stroke: #f0f0f0;
+  stroke-dasharray: 3 3;
+}
+
+/* Axis styling */
+.recharts-xAxis,
+.recharts-yAxis {
+  font-size: 12px;
+  color: #666;
+}
+
+/* Line chart styling */
+.recharts-line {
+  stroke-width: 2;
+}
+
+.recharts-dot {
+  stroke-width: 2;
+}
+
+/* Reference line styling */
+.recharts-reference-line {
+  stroke-dasharray: 5 5;
+  opacity: 0.7;
+}
+
+.recharts-reference-line-label {
+  font-size: 12px;
+  font-weight: 500;
+}
