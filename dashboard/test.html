@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test Page</title>
+</head>
+<body>
+    <h1>🚀 Dashboard Test</h1>
+    <p>If you can see this page, the Flask server is working!</p>
+    <p>Try accessing: <a href="http://localhost:5000">http://localhost:5000</a></p>
+    <p>Or try: <a href="http://127.0.0.1:5000">http://127.0.0.1:5000</a></p>
+    
+    <h2>API Test</h2>
+    <button onclick="testAPI()">Test API</button>
+    <div id="api-result"></div>
+    
+    <script>
+        async function testAPI() {
+            try {
+                const response = await fetch('/api/health');
+                const data = await response.json();
+                document.getElementById('api-result').innerHTML = 
+                    '<h3>API Response:</h3><pre>' + JSON.stringify(data, null, 2) + '</pre>';
+            } catch (error) {
+                document.getElementById('api-result').innerHTML = 
+                    '<h3>API Error:</h3><p>' + error.message + '</p>';
+            }
+        }
+    </script>
+</body>
+</html>
